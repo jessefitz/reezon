@@ -1,0 +1,204 @@
+---
+layout: default
+---
+
+<div class="company-hero">
+  <div class="hero-content">
+    {% if page.hero_image %}
+    <div class="hero-image">
+      <img
+        src="{{ page.hero_image | relative_url }}"
+        alt="{{ site.title }} - {{ page.hero_alt | default: 'Company banner' }}"
+      />
+    </div>
+    {% else %}
+    <div class="hero-image-placeholder">
+      <div class="placeholder-content">
+        <i class="fas fa-image fa-3x"></i>
+        <p>Banner Image Placeholder</p>
+        <small>Add hero_image to your front matter</small>
+      </div>
+    </div>
+    {% endif %}
+
+    <div class="hero-text">
+      {% if page.company_tagline %}
+      <p class="company-tagline">{{ page.company_tagline }}</p>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+<div class="company-content">
+  <div class="services-section">
+    {% if page.services_title %}
+    <h2 class="services-title">{{ page.services_title }}</h2>
+    {% endif %} {% if page.services_description %}
+    <div class="services-description">
+      {{ page.services_description | markdownify }}
+    </div>
+    {% endif %} {% if page.services %}
+    <div class="services-list">
+      {% for service in page.services %}
+      <div class="service-item">
+        {% if service.icon %}
+        <div class="service-icon">
+          <i class="{{ service.icon }}"></i>
+        </div>
+        {% endif %}
+        <h3>{{ service.title }}</h3>
+        <p>{{ service.description }}</p>
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+
+  {% if content != blank %}
+  <div class="additional-content">{{ content | markdownify }}</div>
+  {% endif %}
+</div>
+
+<style>
+  .company-hero {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .hero-image-placeholder {
+    width: 100%;
+    max-width: 800px;
+    height: 300px;
+    background-color: #f8f9fa;
+    border: 2px dashed #dee2e6;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6c757d;
+  }
+
+  .placeholder-content {
+    text-align: center;
+  }
+
+  .placeholder-content i {
+    margin-bottom: 1rem;
+    opacity: 0.5;
+  }
+
+  .company-name {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+    color: #2c3e50;
+  }
+
+  .company-tagline {
+    font-size: 1.25rem;
+    color: #5a6c7d;
+    margin: 0.5rem 0 0 0;
+    font-weight: 300;
+  }
+
+  .company-content {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .services-section {
+    margin-bottom: 3rem;
+  }
+
+  .services-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+  }
+
+  .services-description {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #5a6c7d;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .service-item {
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  .service-icon {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+  }
+
+  .service-item h3 {
+    margin: 1rem 0 0.5rem 0;
+    color: #2c3e50;
+  }
+
+  .service-item p {
+    color: #5a6c7d;
+    margin: 0;
+  }
+
+  .additional-content {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #dee2e6;
+  }
+
+  @media (max-width: 768px) {
+    .company-name {
+      font-size: 2rem;
+    }
+
+    .company-tagline {
+      font-size: 1.1rem;
+    }
+
+    .services-list {
+      grid-template-columns: 1fr;
+    }
+
+    .hero-image-placeholder {
+      height: 200px;
+    }
+  }
+</style>
