@@ -15,6 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Reezon Technology, LLC
 email: jesse@reezon.io
+url: "https://reezon.io" 
 description: >- # this means to ignore newlines until "baseurl:"
   Professional services company providing innovative solutions
   for your business needs. Contact us to learn how we can help
