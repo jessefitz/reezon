@@ -1,27 +1,43 @@
-# Minimal Mistakes remote theme starter
+# Reezon Technology Website
 
-Click [**Use this template**](https://github.com/mmistakes/mm-github-pages-starter/generate) button above for the quickest method of getting started with the [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes).
+This is the source code for the Reezon Technology company website, built with Jekyll and deployed on GitHub Pages.
 
-Contains basic configuration to get you a site with:
+## Overview
 
-- Sample posts.
-- Sample top navigation.
-- Sample author sidebar with social links.
-- Sample footer links.
-- Paginated home page.
-- Archive pages for posts grouped by year, category, and tag.
-- Sample about page.
-- Sample 404 page.
-- Site wide search.
+The site features a clean, professional design focused on showcasing our technology consulting services. Built using the Minimal Mistakes theme with custom layouts and styling.
 
-Replace sample content with your own and [configure as necessary](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
+## Features
+
+- **Custom Company Layout**: Hero banner with services overview
+- **Responsive Design**: Works seamlessly across all devices
+- **Professional Branding**: Consistent with Reezon Technology identity
+- **Fast Loading**: Optimized for performance and SEO
+- **Contact Integration**: Direct links to LinkedIn and email
+
+## Technology Stack
+
+- **Framework**: Jekyll (static site generator)
+- **Theme**: Minimal Mistakes (remote theme)
+- **Hosting**: GitHub Pages
+- **Domain**: Custom domain with SSL
+- **Styling**: Custom CSS with responsive design
+
+## Local Development
+
+```bash
+# Install dependencies
+bundle install
+
+# Run development server
+bundle exec jekyll serve --livereload
+
+# Visit http://localhost:4000
+```
+
+## Deployment
+
+The site automatically deploys to [reezon.io](https://reezon.io) when changes are pushed to the main branch.
 
 ---
 
-## Troubleshooting
-
-If you have a question about using Jekyll, start a discussion on the [Jekyll Forum](https://talk.jekyllrb.com/) or [StackOverflow](https://stackoverflow.com/questions/tagged/jekyll). Other resources:
-
-- [Ruby 101](https://jekyllrb.com/docs/ruby-101/)
-- [Setting up a Jekyll site with GitHub Pages](https://jekyllrb.com/docs/github-pages/)
-- [Configuring GitHub Metadata](https://github.com/jekyll/github-metadata/blob/master/docs/configuration.md#configuration) to work properly when developing locally and avoid `No GitHub API authentication could be found. Some fields may be missing or have incorrect data.` warnings.
+*© 2025 Reezon Technology, LLC. All rights reserved.*

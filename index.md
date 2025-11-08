@@ -27,6 +27,8 @@ services:
 Contact us today to discuss how we can help transform your business. Our team is ready to provide personalized solutions that meet your specific requirements.
 
 **Get in touch:**
+
+- [Book a Consultation](https://outlook.office.com/book/ReezonTechnology@reezon.io/)
 - Email: [jesse@reezon.io](mailto:jesse@reezon.io)
 - Connect with us on [LinkedIn](https://linkedin.com/in/jessefitzgibbon)
 
