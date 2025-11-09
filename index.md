@@ -1,5 +1,6 @@
 ---
 layout: company
+description: "Modernization, smart build-vs-buy, and practical AI for measurable results in Howard County, Maryland"
 company_name: "Reezon Technology"
 company_tagline: "Making Technology Work for Your Reason"
 hero_image: "/assets/images/reezon-hero-banner-small.png"
@@ -11,20 +12,20 @@ services_description: |
   we guide businesses toward solutions that are practical, scalable, and aligned with their mission.
 services:
   - title: "Digital Transformation"
-    description: "Guidance on modernizing systems, making smart build-vs-buy decisions, and implementing practical technology strategies."
+    description: "Guidance on modernizing systems, leveraging AI effectively, and implementing technology strategies that drive real results."
     icon: "fas fa-microchip"
   - title: "Talent Development"
     description: "Helping teams grow through mentoring, process improvement, and aligning technology with business goals."
     icon: "fas fa-users-cog"
-  - title: "Innovation & Startup Support"
-    description: "Advising startups on product strategy, Lean Startup methods, and providing fractional CTO support."
+  - title: "Innovation & Support"
+    description: "Advising startups and small businesses on technical strategy, Lean Startup methods, and providing fractional CTO support."
     icon: "fas fa-rocket"
 
 ---
 
-## Ready to Get Started?
+# Ready to Get Started?
 
-Contact us today to discuss how we can help transform your business. Our team is ready to provide personalized solutions that meet your specific requirements.
+Contact us today to discuss how we can help transform your business. We're ready to put technology to work for you.
 
 **Get in touch:**
 

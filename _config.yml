@@ -16,10 +16,9 @@
 title: Reezon Technology, LLC
 email: jesse@reezon.io
 url: "https://reezon.io" 
+logo: "/assets/images/reezon-logo-square-512.png"
 description: >- # this means to ignore newlines until "baseurl:"
-  Professional services company providing innovative solutions
-  for your business needs. Contact us to learn how we can help
-  your organization achieve its goals.
+  Based in Howard County, Maryland, Reezon Technology helps businesses of all sizes bridge the gap between technology, people, and purpose—delivering practical, scalable solutions that align with their mission.
 linkedin_username: jessefitzgibbon
 # Removed blog-related social links
 minimal_mistakes_skin: default
@@ -53,6 +52,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-seo-tag
   # Removed blog-related plugins
 
 author:

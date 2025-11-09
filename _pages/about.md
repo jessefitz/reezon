@@ -1,6 +1,7 @@
 ---
 permalink: /about/
 title: "About"
+description: "Modernization, smart build-vs-buy, and practical AI for measurable results in Howard County, Maryland"
 author_profile: true
 ---
 Reezon Technology was founded on the belief that technology should serve a purpose—one that’s grounded in real value, not hype. We help businesses of all sizes navigate an ever-changing technology landscape, providing clarity and direction where complexity often prevails. From strategy and digital transformation to talent development and innovation support, our goal is to help organizations make confident, informed decisions that move them forward.
